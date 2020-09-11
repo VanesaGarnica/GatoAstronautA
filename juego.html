@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+    <title>Gato Astronauta</title>
+</head>
+
+<body>
+    <div hidden="true" id="alerta-exito" style="z-index: 1; position:fixed; top: 0;left: 0; right: 0;" class="alert alert-danger alert-dismissible fade show">
+    </div>
+    <div hidden="true" id="alerta-fracaso" style="z-index: 1; position:fixed; top: 0;left: 0; right: 0;" class="alert alert-success alert-dismissible fade show">
+    </div>
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Gato Astronauta</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <ion-icon name="menu"></ion-icon>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="index.html#cosas-divertidas">Cosas Divertidas</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="index.html#mas-info">Mas Info</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="index.html#contactanos">Contactanos</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="juego">Juego</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <section class="bg-dark">
+        <div class="container">
+            <h2 class="text-light">El juego</h2>
+            <p class="lead text-gold">¿Cuanto sabés sobre gatos famosos?</p>
+            <div class="row mt-6">
+                <div class="col-md-6">
+                    <img src="imagenes/adivinanza1.jpg" class="img-fluid">
+                    <div class="bg-light p-4">
+                        <h4 class="text-dark">Adivinanza 1</h4>
+                        <p class="text-muted mb-0">¡Presioná acá abajo para intentar resolverla!</p>
+                        <button class="btn btn-secondary mt-3" onclick="adivinanza1();">¡Adivinanza!</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="imagenes/adivinanza2.jpg" class="img-fluid">
+                    <div class="bg-light p-4">
+                        <h4 class="text-dark">Adivinanza 2</h4>
+                        <p class="text-muted mb-0">¡Presioná acá abajo para intentar resolverla!</p>
+                        <button class="btn btn-secondary mt-3" onclick="adivinanza2();">¡Adivinanza!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="videoWrapper">
+            <iframe allow="fullscreen; autoplay; encrypted-media" src="https://games.construct.net/2959/latest" frameborder="0" allowfullscreen="true" msallowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" allowpaymentrequest="false" referrerpolicy="unsafe-url"
+                sandbox="allow-same-origin allow-forms allow-scripts allow-pointer-lock allow-orientation-lock allow-popups" scrolling="no"></iframe>
+        </div> -->
+    </section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="funciones.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+</body>
+
+</html>
